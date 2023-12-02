@@ -5,5 +5,5 @@
  * @author Sai
  *
  */
-module Inheritance {
+module Whileloop {
 }

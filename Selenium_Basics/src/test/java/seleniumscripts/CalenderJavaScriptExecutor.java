@@ -31,7 +31,7 @@ public class CalenderJavaScriptExecutor {
 
 		js.executeScript("document.getElementById('onward_cal').value='11/12/2024'");
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		driver.close();
 

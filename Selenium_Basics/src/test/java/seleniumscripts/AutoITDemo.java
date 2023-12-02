@@ -40,7 +40,7 @@ public class AutoITDemo {
 		// Below code for script editor : Go to Window search > type "Scit"
 		//File dir = new Dir("C:\\Users\\Sai\\OneDrive\\Desktop\\Autoit\\ScriptUpload1.exe");
 		
-		Runtime.getRuntime().exec("C:\\Users\\Sai\\OneDrive\\Desktop\\AutoIT\\ScriptUpload3.exe");
+		Runtime.getRuntime().exec("C:\\Users\\Sai\\OneDrive\\Desktop\\AutoIT\\ScriptUpload1.exe");
 	
 			
 	}

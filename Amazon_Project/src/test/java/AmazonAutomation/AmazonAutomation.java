@@ -51,10 +51,10 @@ public class AmazonAutomation {
 		Thread.sleep(5000);
 
 		driver.findElement(By.xpath("//div[@class='a-box-inner a-padding-extra-large']/descendant::input[1]"))
-				.sendKeys("9700102308");
+				.sendKeys("9876543210");
 
 		driver.findElement(By.xpath("//div[@class='a-box-inner a-padding-extra-large']/descendant::input[3]"))
-				.sendKeys("Amazon@123");
+				.sendKeys("Password");
 
 		driver.findElement(By.xpath("//div[@class='a-box-inner a-padding-extra-large']/descendant::input[5]")).click();
 
