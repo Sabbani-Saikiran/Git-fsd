@@ -1,0 +1,443 @@
+!SESSION 2023-11-21 07:30:23.330 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data C:\\Users\\Sai\\eclipse-workspace\\TDD-Workspace -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-21 07:30:30.906
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-21 07:30:33.648
+!MESSAGE Logback config file: C:\Users\Sai\eclipse-workspace\TDD-Workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-11-21 07:30:39.408
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-21 07:30:39.408
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-21 07:30:48.464
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Sai'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2023-11-21 07:31:44.377
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.io.File.getParentFile()" because the return value of "org.apache.maven.model.Model.getPomFile()" is null
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.getProjectName(ProjectConfigurationManager.java:997)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.validate(MavenProjectWizardLocationPage.java:299)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.lambda$2(MavenProjectWizardLocationPage.java:146)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:119)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:32:43.895
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:32:43.969
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:34:14.483
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:34:14.585
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:38:58.034
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:38:58.043
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:43:06.879
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:43:06.898
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:43:21.408
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:43:21.416
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:43:24.129
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 07:43:24.136
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 07:50:09.910
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64941 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1392183478\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 64941 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1392183478\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:29:20.739
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:29:20.749
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:30:56.030
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:30:56.039
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:31:04.695
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:31:04.704
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:31:35.713
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 08:31:35.720
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 09:47:48.274
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 09:47:48.282
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2023-11-21 16:22:51.162 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data C:\\Users\\Sai\\eclipse-workspace\\TDD-Workspace -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-21 16:22:57.940
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-21 16:23:01.008
+!MESSAGE Logback config file: C:\Users\Sai\eclipse-workspace\TDD-Workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-11-21 16:23:04.520
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-21 16:23:04.520
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.testng.eclipse 4 4 2023-11-21 16:23:13.192
+!MESSAGE Error
+!STACK 0
+java.util.concurrent.CancellationException
+	at org.eclipse.jface.internal.text.codemining.CancellationExceptionMonitor.isCanceled(CancellationExceptionMonitor.java:33)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:80)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:89)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.mineForTests(TestCodeMiningProvider.java:67)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.lambda$0(TestCodeMiningProvider.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-21 16:23:15.141
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Sai'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 16:56:32.161
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58379 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1663055220\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58379 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1663055220\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:15:27.741
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:15:27.808
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:17:07.996
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:17:08.012
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:21:37.567
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:21:37.575
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:21:39.685
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:21:39.693
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:22:17.480
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:22:17.487
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 18:22:21.480
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58625 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-975303140\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58625 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-975303140\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:22:27.766
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:22:27.774
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 18:22:33.950
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58627 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1713666927\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58627 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1713666927\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:22:56.844
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:22:56.851
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:23:03.034
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:23:03.041
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 18:23:06.119
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58629 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1034062452\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58629 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1034062452\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:24:03.559
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:24:03.568
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:25:00.617
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:25:00.625
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:27:08.609
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:27:08.616
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:27:15.433
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:27:15.440
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 18:27:18.652
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58644 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--3869131\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58644 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--3869131\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:30:59.884
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:30:59.893
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:31:32.941
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:31:32.952
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:31:52.867
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:31:52.874
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:31:55.092
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:31:55.099
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 18:50:04.553
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58685 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1185249265\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58685 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1185249265\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:51:26.245
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:51:26.251
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:51:39.794
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:51:39.801
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 18:51:42.264
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58690 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-21923478\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58690 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse-21923478\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:51:58.016
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 18:51:58.025
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 18:52:01.400
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58692 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1375084455\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58692 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1375084455\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 19:01:25.810
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58710 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1224671705\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58710 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1224671705\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 19:01:31.468
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58712 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--683314678\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58712 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--683314678\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 19:01:36.980
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58714 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1759057279\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58714 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--1759057279\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 19:02:07.309
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 19:02:07.315
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-11-21 19:02:09.143
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58716 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--953731858\testng-customsuite.xml
+java -ea -classpath C:\Users\Sai\eclipse\java-2023-095\eclipse\configuration\org.eclipse.osgi\521\0\.cp\lib\testng-remote.jar:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\test-classes:C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\target\classes:C:\Users\Sai\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar:C:\Users\Sai\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar:C:\Users\Sai\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar:C:\Users\Sai\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar org.testng.remote.RemoteTestNG -serport 58716 -protocol json -d C:\Users\Sai\eclipse-workspace\TDD-Workspace\TDDFramework\test-output C:\Users\Sai\AppData\Local\Temp\testng-eclipse--953731858\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 19:02:18.902
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-21 19:02:18.910
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
